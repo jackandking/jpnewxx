@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 
-
 # Imports
-from modules.bottle import Bottle, template
+from bottle import *
 
 # App
 app = Bottle()
-
+debug(True)
 
 @app.get('/')
 def default():
